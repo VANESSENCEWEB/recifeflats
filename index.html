@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="homepage.html" class="logo">
+                <div class="logo-text">
+                    <h1>Recife <span>Flats</span></h1>
+                    <p>Temporada</p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="homepage.html" class="nav-link active" data-en="Home" data-pt="Início">Home</a></li>
+                    <li><a href="apartments.html" class="nav-link" data-en="Apartaments" data-pt="Apartamentos">Apartamentos</a></li>
+                    <li><a href="avaliacoes.html" class="nav-link" data-en="Reviews" data-pt="Avaliações">Avaliações</a></li>
+                    <li><a href="getintouch.html" class="nav-link" data-en="Contact" data-pt="Contato">Contact</a></li>
+                    <li><a href="blogrecife.html" class="nav-link" data-en="Know Recife" data-pt="Explore Recife">Explore Recife</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Language Switcher Desktop -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="pt">PT</button>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-wrapper" id="mobileMenu">
+        <div class="menu-header">
+            <span class="menu-title">MENU</span>
+            <button class="menu-close-btn" id="menuClose" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link" data-en="Home" data-pt="Início">Home</a></li>
+            <li><a href="#apartaments" class="mobile-nav-link" data-en="Apartaments" data-pt="Apartamentos">Apartamentos</a></li>
+            <li><a href="#reviews" class="mobile-nav-link" data-en="Reviews" data-pt="Avaliações">Avaliações</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-en="Contact" data-pt="Contato">Contact</a></li>
+            <li><a href="#blog" class="mobile-nav-link" data-en="Know Recife" data-pt="Explore Recife">Explore Recife</a></li>
+        </ul>
+
+        <!-- Stats -->
+        <div class="menu-stats">
+            <div class="stat-item views">
+                <i class="fas fa-eye"></i>
+                <span>2.4K</span>
+            </div>
+            <div class="stat-item likes">
+                <i class="fas fa-heart"></i>
+                <span>323</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="menu-controls">
+            <button class="control-btn" id="themeBtn">
+                <span class="control-btn-left">
+                    <span class="emoji">🌙</span>
+                    <span data-en="Theme" data-pt="Tema">Theme</span>
+                </span>
+                <span class="control-btn-right">
+                    <span id="themeStatus" data-en="Dark" data-pt="Escuro">Dark</span>
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </button>
+
+            <button class="control-btn" id="langBtn">
+                <span class="control-btn-left">
+                    <span class="emoji">🌐</span>
+                    <span data-en="Language" data-pt="Idioma">Language</span>
+                </span>
+                <span class="control-btn-right">
+                    <span id="currentLang">EN</span>
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+   <!-- Ticker -->
+<div class="ticker-wrapper">
+    <div class="ticker">
+
+        <span class="ticker-item"><span data-en="🏠 Furnished Flats in Boa Viagem " data-pt="🏠 Flats Mobiliados em Boa Viagem">🏠 Flats Mobiliados em Boa Viagem</span></span>
+
+        <span class="ticker-item"><span data-en="🌊 100m from Beach" data-pt="🌊 A 100m da Praia">🌊 A 100m da Praia</span></span>
+                
+        <span class="ticker-item"><span data-en="📶 WiFi 300Mbps" data-pt="📶 WiFi">📶 WiFi</span></span>
+        
+        <span class="ticker-item"><span data-en="🏊 Pool & Gym" data-pt="🏊 Piscina e Academia">🏊 Piscina e Academia</span></span>
+        
+        <span class="ticker-item"><span data-en="✅ Fully Equipped Apartments close the beach" data-pt="✅ Apartamentos Mobiliados a 2min. da Praia ">✅ Apartamentos Mobiliados a 2min. da Praia</span></span>
+        
+        <span class="ticker-item"><span data-en="🏖️ Prime Location Near Beach and Shopping" data-pt="🏖️ Localização Privilegiada Perto da Praia e Shoppings">🏖️ Localização Privilegiada Perto da Praia e Shoppings</span></span>
+        
+        <span class="ticker-item"><span data-en="✈️ Airport Transfer Service Available" data-pt="✈️ Transfer Aeroporto - Apartamento Disponível">✈️ Transfer Aeroporto - Apartamento Disponível</span></span>
+        
+        <span class="ticker-item"><span data-en="🛄 Premium Comfort" data-pt="🛄 Conforto Premium - Pronto para Morar">🛄 Conforto Premium - Pronto para Morar</span></span>
+        
+        <span class="ticker-item"><span data-en="🛄 Premium Support 24/7" data-pt="🛄 Suporte 24 horas Premium">🛄 Suporte 24 horas Premium</span></span>
+        
+       <span class="ticker-item"><span data-en="⭐️ Premium Care from Check-in to Check-out" data-pt="⭐️ Cuidado Premium do Check-in ao Check-out">⭐️ Cuidado Premium do Check-in ao Check-out</span></span>
+        
+    </div>
+</div>
+
+
+    <!-- Main Content -->
+    <main>
+<h1>Oi</h1>
+
+        </main>
+
+        <footer>
+            meu cu
+            
+            </footer>
+
+  
+</body>
+   <script src="script.js"></script>
+</html>
